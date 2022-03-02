@@ -15,16 +15,10 @@ if(userNumber >= 100){
     userNumber = 100;
 }
 
-const arrayList = [];
-
 for (let i = 0; i < userNumber; i++){
     const tempArray = [];
-    while (tempArray.lenght < 10){
-        //tempArray.push( Math.floor(Math.random() * 4528) + 4 );
-        tempArray.push('ciao');
+    while (tempArray.length < 10){
+        tempArray.push( Math.floor(Math.random() * 4528) + 4 );
     }
     console.log(tempArray);
-    arrayList.push(tempArray);
 }
-
-console.log(arrayList);
